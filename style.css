@@ -199,6 +199,7 @@ button:hover {
 @media screen and (max-width: 1160px) {
   .greeting__occupation h2 {
     max-width: 280px;
+    font-size: 3.6rem;
   }
 }
 @media screen and (max-width: 920px) {
@@ -251,7 +252,7 @@ button:hover {
   flex-direction: column;
   align-content: space-between;
   height: 1280px;
-  gap: 5.5rem;
+  gap: 2.5rem;
 }
 @media screen and (max-width: 1160px) {
   .main__container {
@@ -268,7 +269,7 @@ button:hover {
 
 .text-block {
   font-size: 1.6rem;
-  max-width: 48%;
+  max-width: 47%;
 }
 @media screen and (max-width: 920px) {
   .text-block {
