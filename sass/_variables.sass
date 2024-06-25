@@ -1,0 +1,26 @@
+
+
+$bg_color: #1c312a
+$light_font_color: #475d55
+$white_font_color: #f3f9f7
+$green_font_color: #28a272
+	
+// Адаптивное свойство
+$maxWidth: 1170 
+$maxWidthContainer: 1170 // Размер после которого начинает уменьшаться+увеличиваться
+
+
+@mixin adaptive($property, $startSize, $minSize, $type)
+	$addSize: $startSize - $minSize
+	@if $type == 1 
+		// Только если меньше контейнера
+		#{$property}: ($startSize * 1px)
+		@media ( max-width: ($maxWidthContainer * 1px))
+			#{$property}: calc(($minSize * 1px) + $addSize * ((100vw - 320px) / ($maxWidthContainer - 320)))
+	@else if $type == 2 
+		// Только если больше контейнера 
+		#{$property}: ($startSize * 1px)
+		@media ( min-width: ($maxWidthContainer * 1px))	
+			#{$property}: calc(($minSize * 1px) + $addSize * ((100vw - 320px) / ($maxWidth - 320)))
+	@else 
+		#{$property}: calc(($minSize * 1px) + $addSize * ((100vw - 320px) / ($maxWidth - 320)))

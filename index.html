@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title id="title">CV Ovchinnikov</title>
+</head>
+<body>
+    <div class="content hidden" id="main-content">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__greeting greeting">
+                    <div class="greeting__surname">
+                        <h1 id="name"></h1>
+                    </div>
+                    <div class="greeting__occupation">
+                        <h2 id="occupation"></h2>
+                        <div class="greeting__circle-image">
+                            <img src="images/ava.webp" alt="Vasiliy Ovchinnikov photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="header__contacts contacts">
+                    <div id="language-switcher">
+                        <button onclick="switchLanguage('en')">English</button>
+                        <button onclick="switchLanguage('ru')">Русский</button>
+                    </div>
+                    <ul>
+                        <li id="geolocation"></li>
+                        <li><span id="phone"></span><a href="tel:+79175056814">+7-917-505-68-14</a></li>
+                        <li><span id="email"></span><a href="mailto:bacek.mangust@gmail.com">bacek.mangust@gmail.com  </a> </li>
+                        <li><span id="tg"></span><a href="https://t.me/mangusik228">@mangusik228</a></li>
+                        <li><span>github</span><a href="http://github.com/mangustik228/">github.com/mangustik228</a></li>
+                    </ul>
+                    <button class="contacts__download-cv" id="download-button">
+                        Download CV (.pdf)
+                    </button>
+                    
+                </div>
+            </div>
+        </header>
+
+
+
+        <main class="main">
+            <div class="main__container">
+                
+                <div class="text-block" id="about-me"></div>
+                <div class="text-block" id="skills"></div>
+                <div class="text-block" id="languages"></div>
+                <div class="text-block" id="courses"></div>
+                <div class="text-block" id="education"></div>
+                <div class="text-block" id="experience"></div>
+
+
+
+
+                <div class="text-block" id="interests"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

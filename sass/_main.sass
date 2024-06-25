@@ -1,0 +1,115 @@
+@import variables
+
+
+                            
+                            
+.main
+    &__container
+        margin-top: 5rem
+        display: flex 
+        flex-wrap: wrap 
+        flex-direction: column
+        align-content: space-between
+        height: 900px
+        gap: 2rem
+        @media screen and ( max-width: 920px )
+            flex-wrap: nowrap
+            height: 100%
+            align-items: center
+        
+
+.text-block
+    font-size: 1.2rem
+    max-width: 48%
+    @media screen and ( max-width: 920px )
+        max-width: none 
+        width: 420px
+    @media screen and ( max-width: 460px )
+        width: 97%
+    & h4 
+        font-size: 1.4rem
+        color: $white_font_color
+        text-transform: uppercase
+        line-height: 2
+    h3 
+        font-size: 1.8rem
+        text-transform: uppercase
+        font-weight: bold
+        color: $white_font_color
+        border-bottom: 1px solid $white_font_color
+        line-height: 1.4
+        margin-bottom: 1rem
+    
+    & p 
+        color: $white_font_color
+        text-justify: auto 
+        line-height: 1.2
+        margin-bottom: 0.8rem
+        text-indent: 2rem
+        & span:first-child
+            text-transform: capitalize
+            &::after
+                content: ": "
+
+.list-one-row
+    & li 
+        display: flex
+        color: $white_font_color
+        & span 
+            line-height: 1.5 
+        & span:first-child
+            text-transform: capitalize
+            flex-grow: 1 
+            &::after
+                content: ": "
+                flex-grow: 1 
+        & span:last-child
+            color: $green_font_color
+        & a 
+            color: $green_font_color
+            transition: 0.2s 
+            text-transform: capitalize
+            &:hover 
+                color: $white_font_color
+
+.inner-list 
+    & li
+        color: $white_font_color
+        & span:first-child
+            text-transform: capitalize
+            line-height: 1.5
+            &::after
+                content: ": "
+        & ul 
+            padding-left: 3rem
+            line-height: 1.2
+            & li 
+                color: $green_font_color
+            & li::before
+                content: "- "
+
+.inner-white-list
+    & li ul li 
+        color: $white_font_color
+        padding: 0.3rem 0
+    &__simple li 
+        line-height: 1.3
+        color: $white_font_color
+        margin-bottom: 0.8rem
+
+
+.work-experience
+    &__item
+        padding-bottom: 1rem
+        margin-bottom: 1rem
+        border-bottom: 1px solid $light_font_color
+        &:last-child
+            border-bottom: none
+
+
+
+.green-text
+    color: $green_font_color 
+    font-weight: bold
+    &::after
+        content: ": "
