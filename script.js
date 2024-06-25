@@ -397,7 +397,6 @@ function switchLanguage(lang) {
     populateResume(resumeContentEn)
   }
   const buttons = document.querySelectorAll('#language-switcher button');
-  console.log(buttons);
   
   let buttonLabel
   if (lang === "en") {
