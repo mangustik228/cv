@@ -10,7 +10,7 @@
         flex-wrap: wrap 
         flex-direction: column
         align-content: space-between
-        height: 900px
+        height: 1000px
         gap: 2rem
         @media screen and ( max-width: 920px )
             flex-wrap: nowrap
@@ -47,7 +47,8 @@
         margin-bottom: 0.8rem
         text-indent: 2rem
         & span:first-child
-            text-transform: capitalize
+            &:first-letter
+                text-transform: capitalize
             &::after
                 content: ": "
 
@@ -58,7 +59,8 @@
         & span 
             line-height: 1.5 
         & span:first-child
-            text-transform: capitalize
+            &:first-letter
+                text-transform: capitalize
             flex-grow: 1 
             &::after
                 content: ": "
@@ -68,7 +70,8 @@
         & a 
             color: $green_font_color
             transition: 0.2s 
-            text-transform: capitalize
+            &:first-letter
+                text-transform: capitalize
             &:hover 
                 color: $white_font_color
 
@@ -76,7 +79,8 @@
     & li
         color: $white_font_color
         & span:first-child
-            text-transform: capitalize
+            &:first-letter
+                text-transform: capitalize
             line-height: 1.5
             &::after
                 content: ": "

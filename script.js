@@ -10,10 +10,9 @@ const resumeContentRu = {
   aboutMe: {
     "title":"Обо мне",
     "texts": [
-      "Я разработчик на Python с опытом создания парсеров и фокусом на оптимизации бизнес-процессов.",
-      "В своей карьере я также успешно возглавлял разработку системы офисных рабочих мест, которая значительно улучшила рабочие процессы компании.",
-      "В настоящее время я стремлюсь перейти в веб-разработку, где могу применить свои знания для решения реальных бизнес-задач, находя баланс между качеством, скоростью и эффективностью выполнения проектов.",
-      "Я ищу возможности, где смогу сочетать технические навыки и стратегическое видение для достижения оптимальных результатов."
+      "Разработчик на Python с непреодолимым желанием оптимизировать не оптимизированное.",
+      "В настоящее время я стремлюсь перейти и развиваться в веб-разработке, где могу применить свои знания для решения реальных бизнес-задач. ",
+      "Мои проекты заметно сокращали время работы другим сотрудникам, находя баланс между качеством, скоростью и эффективностью выполнения проектов. Я ищу возможности, где смогу сочетать технические навыки и стратегическое видение для достижения оптимальных результатов."
     ]
   },
   skills: {
@@ -46,7 +45,7 @@ const resumeContentRu = {
       ["Асинхронный python", "https://stepik.org/cert/2160081"], 
       ["Интерактивынй тренажер SQL", "https://stepik.org/cert/2170328"], 
       ["FastApi - Погружение в backend", "https://stepik.org/cert/2175008"], 
-      ["Многопоточный python", "https://stepik.org/cert/2402675"], 
+      ["Многопоточный python", "https://stepik.org/cert/2402675"],
     ]
   },
   education: {
@@ -76,10 +75,10 @@ const resumeContentRu = {
         "details":{
           "key":"Детали", 
           "items":[
-            ["Разработка парсеров", "Разработка и поддержка парсеров для различных веб-ресурсов, включая крупные торговые площадки, с использованием фреймворков Scrapy и Playwright."],
-            ["Разработка сервисов", "Создание сервиса мониторинга прокси-серверов для обеспечения стабильной работы парсеров."],
+            ["Разработка парсеров", "Разработка и поддержка парсеров для различных веб-ресурсов, способных обходить более 2 млн страниц в день, с возможностью дальнейшего масштабирования."],
+            ["Разработка сервисов", "Создание сервиса ротации и мониторинга проксей для обеспечения стабильной работы десятка парсеров"],
             ["Управление базами данных", "Проектирование структур баз данных, написание SQL-запросов для хранения и извлечения данных, сотрудничество с аналитиками для предоставления необходимой информации."],
-            ["Разработка веб-интерфейсов", "Создание пользовательских интерфейсов для взаимодействия с данными парсеров с использованием FastAPI."]
+            ["Разработка веб-интерфейсов", "Создание внутренних интерфейсов на FastAPI для взаимодействия с парсерами и базами данных."]
           ]
         }
       },
@@ -90,8 +89,9 @@ const resumeContentRu = {
         "details":{
           "key":"Детали", 
           "items":[
-            ["Оптимизация процессов", "Разработка макросов Excel для автоматизации рутинных задач и повышения эффективности отдела."],
-            ["Управление проектами", "Руководство разработкой системы учёта заказов для офиса, включая поиск и взаимодействие с программистом."]
+            ["Общение с клиентами", "Ведение переговоров с клиентами, 3D моделирование мебели, проектирование изделий и передача их в цех для производства"],
+            ["Оптимизация процессов", "Разработка макросов Excel для автоматизации рутинных задач и повышения продуктивности."],
+            ["Управление проектами", "Руководство разработкой системы учёта заказов, включая поиск и взаимодействие с программистом."]
           ]
         }
       }
@@ -111,11 +111,11 @@ const resumeContentEn = {
   aboutMe: {
     "title":"About me",
     "texts": [
-      "I am a Python developer with experience in building parsers and a focus on optimizing business processes.",
-      "In my career, I also successfully led the development of an office-desk system that significantly improved company workflows.",
-      "I am currently looking to transition into web development, where I can apply my knowledge to solve real business challenges, finding a balance between quality, speed, and efficiency in project execution.",
-      "I am seeking opportunities where I can combine technical skills and strategic vision to achieve optimal results."
-    ]
+      "Python developer with an irresistible desire to optimize the unoptimized.",
+      "I am currently striving to transition and grow in web development, where I can apply my knowledge to solve real business problems.",
+      "My projects have significantly reduced work time for other employees, balancing quality, speed, and efficiency. I am looking for opportunities where I can combine technical skills and strategic vision to achieve optimal results."
+  ]
+  
   },
   skills: {
     "title": "skills",
@@ -177,11 +177,11 @@ const resumeContentEn = {
         "details":{
           "key":"Details", 
           "items":[
-            ["Parser Development", "Development and maintenance of parsers for various web resources, including major marketplaces, using the Scrapy and Playwright frameworks."],
-            ["Service Development", "Creation of a proxy server monitoring service to ensure stable parser operations."],
-            ["Database Management", "Design of database structures, writing SQL queries for data storage and retrieval, collaboration with analysts to provide necessary information."],
-            ["Web Interface Development", "Creation of user interfaces for interacting with parser data using FastAPI."]
-          ]
+            ["Development of parsers", "Development and maintenance of parsers for various web resources, capable of processing over 2 million pages per day, with the potential for further scaling."],
+            ["Service development", "Creation of a proxy rotation and monitoring service to ensure stable operation of a dozen parsers."],
+            ["Database management", "Designing database structures, writing SQL queries for data storage and retrieval, collaborating with analysts to provide necessary information."],
+            ["Web interface development", "Creating internal interfaces on FastAPI for interaction with parsers and databases."]
+        ]
         }
       },
       {
@@ -191,8 +191,9 @@ const resumeContentEn = {
         "details":{
           "key":"Details", 
           "items":[
-            ["Process Optimization", "Development of Excel macros to automate routine tasks and increase department efficiency."],
-            ["Project Management", "Led the development of an office-desk system for order tracking, including finding and interacting with a programmer."]
+            ["Client communication", "Negotiating with clients, 3D modeling of furniture, designing products, and sending them to the workshop for production."],
+            ["Process optimization", "Developing Excel macros to automate routine tasks and improve productivity."],
+            ["Project management", "Leading the development of an order tracking system, including finding and liaising with a programmer."]
           ]
         }
       }
@@ -209,11 +210,17 @@ function insertCourses(id, key, content) {
     const li = document.createElement("li")
     const name = document.createElement("span")
     name.innerText = item[0]
+    li.appendChild(name)
     const link = document.createElement("a")
     link.href = item[1]
-    link.innerText = content[key]["cert"]
-    li.appendChild(name)
-    li.appendChild(link)
+    if (item[1]) {
+      link.innerText = content[key]["cert"]
+      li.appendChild(link)
+    } else {
+      empty_span = document.createElement("span")
+      empty_span.innerText = "Без сертификата"
+      li.appendChild(empty_span)
+    }
     ul.appendChild(li)
   });
   element.append(ul)

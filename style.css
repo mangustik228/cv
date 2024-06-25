@@ -228,7 +228,7 @@ button:hover {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: space-between;
-  height: 900px;
+  height: 1000px;
   gap: 2rem;
 }
 @media screen and (max-width: 920px) {
@@ -276,7 +276,7 @@ button:hover {
   margin-bottom: 0.8rem;
   text-indent: 2rem;
 }
-.text-block p span:first-child {
+.text-block p span:first-child:first-letter {
   text-transform: capitalize;
 }
 .text-block p span:first-child::after {
@@ -291,8 +291,10 @@ button:hover {
   line-height: 1.5;
 }
 .list-one-row li span:first-child {
-  text-transform: capitalize;
   flex-grow: 1;
+}
+.list-one-row li span:first-child:first-letter {
+  text-transform: capitalize;
 }
 .list-one-row li span:first-child::after {
   content: ": ";
@@ -304,6 +306,8 @@ button:hover {
 .list-one-row li a {
   color: #28a272;
   transition: 0.2s;
+}
+.list-one-row li a:first-letter {
   text-transform: capitalize;
 }
 .list-one-row li a:hover {
@@ -314,8 +318,10 @@ button:hover {
   color: #f3f9f7;
 }
 .inner-list li span:first-child {
-  text-transform: capitalize;
   line-height: 1.5;
+}
+.inner-list li span:first-child:first-letter {
+  text-transform: capitalize;
 }
 .inner-list li span:first-child::after {
   content: ": ";
