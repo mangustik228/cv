@@ -76,11 +76,21 @@ html {
   gap: 4rem;
   align-items: center;
 }
+@media screen and (max-width: 1160px) {
+  .header__container {
+    gap: 2rem;
+  }
+}
 @media screen and (max-width: 920px) {
   .header__container {
     flex-wrap: wrap;
     max-width: 420px;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 520px) {
+  .header__container {
+    gap: 1rem;
   }
 }
 .header__contacts {
@@ -198,14 +208,14 @@ button:hover {
 }
 @media screen and (max-width: 1160px) {
   .greeting__occupation h2 {
-    max-width: 280px;
+    max-width: 310px;
     font-size: 3.6rem;
   }
 }
 @media screen and (max-width: 920px) {
   .greeting__occupation h2 {
     max-width: 200px;
-    font-size: 3rem;
+    font-size: 3.6rem;
     justify-content: space-between;
   }
 }
