@@ -190,7 +190,7 @@ button:hover {
   }
 }
 .greeting__occupation h2 {
-  max-width: 340px;
+  max-width: 350px;
   font-size: 4.1rem;
   line-height: 1.4;
   text-transform: uppercase;
@@ -256,7 +256,7 @@ button:hover {
 }
 @media screen and (max-width: 1160px) {
   .main__container {
-    height: 1500px;
+    height: 1550px;
   }
 }
 @media screen and (max-width: 920px) {
