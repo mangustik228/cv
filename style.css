@@ -209,6 +209,12 @@ button:hover {
     justify-content: space-between;
   }
 }
+@media screen and (max-width: 520px) {
+  .greeting__occupation h2 {
+    max-width: 160px;
+    font-size: 2.5rem;
+  }
+}
 .greeting__occupation h2 span {
   color: #28a272;
 }
@@ -235,8 +241,8 @@ button:hover {
 }
 @media screen and (max-width: 520px) {
   .greeting__circle-image {
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
   }
 }
 .greeting__circle-image img {
