@@ -24,7 +24,7 @@ const resumeContentRu = {
       ["Веб-фреймворки", "FastAPI"],
       ["Парсинг", "Scrapy, Emulators, Burp"],
       ["Анализ данных", "Pandas, Basic ML"],
-      ["Конкурентное программирование", "Asyncio, Multithreading"],
+      ["Параллелизм", "Asyncio, Multithreading"],
       ["Тестирование", "Playwright, Pytest"],
       ["Разное", "GIT, Docker, Linux, Nginx"],
       ["Soft-skills", "Google, Слепая печать"]
@@ -53,7 +53,7 @@ const resumeContentRu = {
     "items":[
       ["Университет", "МГУ"],
       ["Факультет", "Географический"],
-      ["Специальность", "Экология (Неоконченное, 5лет)"],
+      ["Специальность", "Экология"],
     ]
   },
   interests: {
@@ -126,7 +126,7 @@ const resumeContentEn = {
       ["web-framework", "FastAPI"],
       ["web-scraping", "Scrapy, Emulators, Burp"],
       ["Data Analysis", "Pandas, Basic ML"],
-      ["Councurrentcy programming", "Asyncio, Multithreading"],
+      ["Councurrency programming", "Asyncio, Multithreading"],
       ["Testing", "Playwright, Pytest"],
       ["Other", "GIT, Docker, Linux, Nginx"],
       ["Soft-skills", "Google, blind-printing"]

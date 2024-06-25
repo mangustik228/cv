@@ -73,16 +73,12 @@ html {
 
 .header__container {
   display: flex;
-  gap: 36px;
+  gap: 4rem;
   align-items: center;
 }
 @media screen and (max-width: 920px) {
   .header__container {
     flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 860px) {
-  .header__container {
     max-width: 420px;
     margin: 0 auto;
   }
@@ -90,7 +86,7 @@ html {
 .header__contacts {
   flex-grow: 1;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 920px) {
   .header__greeting {
     width: 100%;
   }
@@ -107,16 +103,22 @@ html {
 .contacts {
   align-items: center;
   justify-content: center;
+  padding-top: 1rem;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 920px) {
   .contacts {
     padding-top: 0rem;
   }
 }
 .contacts li {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 2;
+}
+@media screen and (max-width: 1160px) {
+  .contacts li {
+    font-size: 1.4rem;
+  }
 }
 .contacts li span:first-child {
   text-transform: capitalize;
@@ -143,7 +145,8 @@ html {
 }
 
 button {
-  padding: 0.5rem 1.5rem;
+  padding: 0.7rem 1.7rem;
+  font-size: 1.6rem;
   font-family: monospace;
   border-radius: 4px;
   margin: 2rem auto;
@@ -162,7 +165,7 @@ button:hover {
 }
 
 .greeting__surname h1 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: #475d55;
   border-bottom: 1px solid #475d55;
   text-transform: uppercase;
@@ -170,45 +173,64 @@ button:hover {
 }
 .greeting__occupation {
   display: flex;
+  justify-content: space-around;
+  gap: 4rem;
   padding-right: 5px;
   align-items: center;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1160px) {
+  .greeting__occupation {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 920px) {
   .greeting__occupation {
     padding-right: 0;
     justify-content: space-between;
   }
 }
 .greeting__occupation h2 {
-  max-width: 320px;
-  font-size: 3.4rem;
+  max-width: 340px;
+  font-size: 4.1rem;
   line-height: 1.4;
   text-transform: uppercase;
   color: #f3f9f7;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1160px) {
+  .greeting__occupation h2 {
+    max-width: 280px;
+  }
+}
+@media screen and (max-width: 920px) {
   .greeting__occupation h2 {
     max-width: 200px;
     font-size: 3rem;
     justify-content: space-between;
   }
 }
-@media screen and (max-width: 860px) {
-  .greeting__occupation h2 {
-    font-size: 2.5;
-  }
-}
 .greeting__occupation h2 span {
   color: #28a272;
 }
 .greeting__circle-image {
-  width: 180px;
-  height: 180px;
+  width: 225px;
+  height: 225px;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 1160px) {
+  .greeting__circle-image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .greeting__circle-image {
+    width: 160px;
+    height: 160px;
+  }
 }
 @media screen and (max-width: 520px) {
   .greeting__circle-image {
@@ -223,24 +245,29 @@ button:hover {
 }
 
 .main__container {
-  margin-top: 5rem;
+  margin-top: 4rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-content: space-between;
-  height: 1000px;
-  gap: 2rem;
+  height: 1280px;
+  gap: 5.5rem;
+}
+@media screen and (max-width: 1160px) {
+  .main__container {
+    height: 1500px;
+  }
 }
 @media screen and (max-width: 920px) {
   .main__container {
     flex-wrap: nowrap;
-    height: 100%;
     align-items: center;
+    height: 100%;
   }
 }
 
 .text-block {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   max-width: 48%;
 }
 @media screen and (max-width: 920px) {
@@ -255,24 +282,24 @@ button:hover {
   }
 }
 .text-block h4 {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   color: #f3f9f7;
   text-transform: uppercase;
   line-height: 2;
 }
 .text-block h3 {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   text-transform: uppercase;
   font-weight: bold;
   color: #f3f9f7;
   border-bottom: 1px solid #f3f9f7;
   line-height: 1.4;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 .text-block p {
   color: #f3f9f7;
   text-justify: auto;
-  line-height: 1.2;
+  line-height: 1.4;
   margin-bottom: 0.8rem;
   text-indent: 2rem;
 }
@@ -284,6 +311,7 @@ button:hover {
 }
 
 .list-one-row li {
+  margin-bottom: 0.2rem;
   display: flex;
   color: #f3f9f7;
 }
@@ -318,7 +346,7 @@ button:hover {
   color: #f3f9f7;
 }
 .inner-list li span:first-child {
-  line-height: 1.5;
+  line-height: 1.4;
 }
 .inner-list li span:first-child:first-letter {
   text-transform: capitalize;
@@ -328,7 +356,7 @@ button:hover {
 }
 .inner-list li ul {
   padding-left: 3rem;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 .inner-list li ul li {
   color: #28a272;
@@ -374,6 +402,12 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
+@media screen and (max-width: 920px) {
+  html {
+    font-size: 9px;
+  }
+}
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -385,17 +419,17 @@ main {
 }
 
 .content {
-  width: 960px;
+  width: 1140px;
   margin: 15px auto;
   background: rgba(28, 49, 42, 0.8705882353);
-  padding: 50px 70px 20px 102px;
+  padding: 50px 60px 30px 70px;
   box-shadow: 13px 12px 15px rgba(255, 255, 255, 0.1);
   border-radius: 2px;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1160px) {
   .content {
     margin: 15px auto;
-    padding: 20px 18px 20px 20px;
+    padding: 40px 58px 30px 50px;
     width: 900px;
   }
 }
@@ -403,6 +437,7 @@ main {
   .content {
     width: 98%;
     margin: 0 auto;
+    max-width: 600px;
   }
 }
 

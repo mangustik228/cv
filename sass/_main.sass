@@ -5,21 +5,22 @@
                             
 .main
     &__container
-        margin-top: 5rem
+        margin-top: 4rem
         display: flex 
         flex-wrap: wrap 
         flex-direction: column
         align-content: space-between
-        height: 1000px
-        gap: 2rem
+        height: 1280px
+        gap: 5.5rem
+        @media screen and ( max-width: 1160px ) 
+            height: 1500px
         @media screen and ( max-width: 920px )
             flex-wrap: nowrap
-            height: 100%
             align-items: center
-        
+            height: 100%
 
 .text-block
-    font-size: 1.2rem
+    font-size: 1.6rem
     max-width: 48%
     @media screen and ( max-width: 920px )
         max-width: none 
@@ -27,23 +28,23 @@
     @media screen and ( max-width: 460px )
         width: 97%
     & h4 
-        font-size: 1.4rem
+        font-size: 1.7rem
         color: $white_font_color
         text-transform: uppercase
         line-height: 2
     h3 
-        font-size: 1.8rem
+        font-size: 2.1rem
         text-transform: uppercase
         font-weight: bold
         color: $white_font_color
         border-bottom: 1px solid $white_font_color
         line-height: 1.4
-        margin-bottom: 1rem
+        margin-bottom: 1.2rem
     
     & p 
         color: $white_font_color
         text-justify: auto 
-        line-height: 1.2
+        line-height: 1.4
         margin-bottom: 0.8rem
         text-indent: 2rem
         & span:first-child
@@ -54,6 +55,7 @@
 
 .list-one-row
     & li 
+        margin-bottom: 0.2rem
         display: flex
         color: $white_font_color
         & span 
@@ -81,12 +83,12 @@
         & span:first-child
             &:first-letter
                 text-transform: capitalize
-            line-height: 1.5
+            line-height: 1.4
             &::after
                 content: ": "
         & ul 
             padding-left: 3rem
-            line-height: 1.2
+            line-height: 1.4
             & li 
                 color: $green_font_color
             & li::before
