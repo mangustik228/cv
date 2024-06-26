@@ -166,7 +166,7 @@ button {
 }
 button:hover {
   color: #f3f9f7;
-  box-shadow: 0px 0px 10px #475d55;
+  box-shadow: 0px 0px 6px #475d55;
 }
 
 .active {
@@ -201,7 +201,7 @@ button:hover {
 }
 .greeting__occupation h2 {
   max-width: 355px;
-  font-size: 4.1rem;
+  font-size: 4.6rem;
   line-height: 1.4;
   text-transform: uppercase;
   color: #f3f9f7;
@@ -209,7 +209,7 @@ button:hover {
 @media screen and (max-width: 1160px) {
   .greeting__occupation h2 {
     max-width: 310px;
-    font-size: 3.6rem;
+    font-size: 4.2rem;
   }
 }
 @media screen and (max-width: 920px) {
@@ -267,12 +267,12 @@ button:hover {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: space-between;
-  height: 1400px;
+  height: 1500px;
   gap: 2.5rem;
 }
 @media screen and (max-width: 1160px) {
   .main__container {
-    height: 1650px;
+    height: 1600px;
   }
 }
 @media screen and (max-width: 920px) {
@@ -280,6 +280,18 @@ button:hover {
     flex-wrap: nowrap;
     align-items: center;
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  #skills {
+    order: -2;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  #experience {
+    order: -1;
   }
 }
 
@@ -315,10 +327,8 @@ button:hover {
 }
 .text-block p {
   color: #f3f9f7;
-  text-justify: auto;
   line-height: 1.4;
   margin-bottom: 0.8rem;
-  text-indent: 2rem;
 }
 .text-block p span:first-child:first-letter {
   text-transform: capitalize;
@@ -391,6 +401,7 @@ button:hover {
 .work-experience__item {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+  margin-left: 0.6rem;
   border-bottom: 1px solid #475d55;
 }
 .work-experience__item:last-child {
@@ -421,6 +432,9 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
+html {
+  font-family: monospace;
+}
 @media screen and (max-width: 920px) {
   html {
     font-size: 9px;
@@ -439,7 +453,7 @@ main {
 
 .content {
   width: 1140px;
-  margin: 15px auto;
+  margin: 20px auto 50px;
   background: rgba(28, 49, 42, 0.8705882353);
   padding: 50px 60px 30px 70px;
   box-shadow: 13px 12px 35px rgba(127, 127, 127, 0.15);
@@ -452,16 +466,17 @@ main {
     width: 900px;
   }
 }
-@media screen and (max-width: 560px) {
-  .content {
-    padding: 20px 25px 30px 20px;
-  }
-}
 @media screen and (max-width: 920px) {
   .content {
     width: 98%;
-    margin: 0 auto;
+    margin: 15px auto;
     max-width: 600px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .content {
+    padding: 20px 25px 30px 20px;
+    margin: 0 auto;
   }
 }
 

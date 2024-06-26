@@ -10,15 +10,16 @@ const resumeContentRu = {
   aboutMe: {
     "title":"Обо мне",
     "texts": [
-      "Разработчик на Python с непреодолимым желанием оптимизировать не оптимизированное.",
-      "В настоящее время я стремлюсь перейти и развиваться в веб-разработке, где могу применить свои знания для решения реальных бизнес-задач. ",
-      "Мои проекты заметно сокращали время работы другим сотрудникам, находя баланс между качеством, скоростью и эффективностью выполнения проектов. Я ищу возможности, где смогу сочетать технические навыки и стратегическое видение для достижения оптимальных результатов."
+      "Как хобби, разрабатывал проекты на базе Arduino, направленные на автоматизацию повседневных задач, включая системы полива, пульты дистанционного управления и др.",
+      "Прохождение бассейна в «Школе 21» углубило мои знания в программировании на низкоуровневых языках, таких как C.",
+      "Имею опыт работы с 3D-принтерами и станками ЧПУ, создавал кастомные детали и приспособления для повседневного использования."
     ]
+    
   },
   skills: {
     "title": "Навыки",
     "items": [
-      ["Языки программирования", "Python, TypeScript"],
+      ["Языки программирования", "Python, TS"],
       ["Фронтенд технологии", "HTML, CSS, SASS"],
       ["Базы данных", "SQL, Mongo, Redis"],
       ["Веб-фреймворки", "FastAPI"],
@@ -78,8 +79,8 @@ const resumeContentRu = {
             "key":"Детали", 
           "items":[
             ["Разработка парсеров", "Разработка и поддержка парсеров для различных веб-ресурсов, способных обходить более 2 млн страниц в день, с возможностью дальнейшего масштабирования."],
-            ["Разработка сервисов", "Создание сервиса ротации и мониторинга проксей для обеспечения стабильной работы десятка парсеров одновременно"],
-            ["Управление базами данных", "Проектирование структур баз данных, написание SQL-запросов для хранения и извлечения данных, сотрудничество с аналитиками для предоставления необходимой информации."],
+            ["Разработка сервисов", "Создание сервиса ротации и мониторинга проксей для обеспечения стабильной работы десятка парсеров одновременно."],
+            ["Управление базами данных", "Разработка структур БД и написание SQL и MongoDB запросов для эффективного управления данными. Подготовка сложных запросов с группировками и агрегациями по запросу аналитиков."],
             ["Разработка веб-интерфейсов", "Создание внутренних интерфейсов на FastAPI для взаимодействия с парсерами и базами данных."],
             ["Контейнеризация", "Разработка и поддержка Docker Compose файлов, упаковка компонентов системы в отдельные сервисы для облегчения развертывания и масштабирования."]
           ]
@@ -94,10 +95,10 @@ const resumeContentRu = {
           "key":"Детали", 
           "items":[
             ["Взаимодействие с клиентами", "Ведение переговоров, выявление потребностей, 3D моделирование в SketchUp, согласование и оформление чертежей в Layout."],
-            ['Проектирование изделий', "Разработка детальных чертежей и передача их в цех для дальнейшего производства"],
-            ["Оптимизация процессов", "Разработка динамических 3-d моделей и написание макросов Excel для автоматизации рутинных задач и повышения продуктивности."],
-            ["Управление проектами", "Руководство разработкой системы учёта заказов, включая поиск и взаимодействие с программистом."],
-            ["Контент и веб-оптимизация", "Управление контентом сайта, SEO-оптимизицаия сайта, разработка логики онлайн-калькуляторов для сайта."]
+            ['Проектирование изделий', "Разработка детальных чертежей и их передача в цех для дальнейшего производства"],
+            ["Оптимизация процессов", "Разработка динамических 3D моделей и написание макросов Excel для автоматизации рутинных задач и повышения продуктивности."],
+            ["Управление проектами", "Руководство разработкой системы учёта заказов, включая составление ТЗ и взаимодействие с программистом."],
+            ["Контент и веб-оптимизация", "Управление контентом, SEO-оптимизация, разработка логики онлайн-калькуляторов для сайта."]
           ]
         }
       }
@@ -117,10 +118,11 @@ const resumeContentEn = {
   aboutMe: {
     "title":"About me",
     "texts": [
-      "Python developer with an irresistible desire to optimize the unoptimized.",
-      "I am currently striving to transition and grow in web development, where I can apply my knowledge to solve real business problems.",
-      "My projects have significantly reduced work time for other employees, balancing quality, speed, and efficiency. I am looking for opportunities where I can combine technical skills and strategic vision to achieve optimal results."
+      "As a hobby, I developed Arduino-based projects aimed at automating everyday tasks, including irrigation systems, remote controls, and more.",
+      "Completing the piscine at 'School 21' deepened my knowledge in programming with low-level languages such as C.",
+      "I have experience with 3D printers and CNC machines, creating custom parts and fixtures for everyday use."
   ]
+  
   
   },
   skills: {
@@ -132,7 +134,7 @@ const resumeContentEn = {
       ["web-framework", "FastAPI"],
       ["web-scraping", "Scrapy, Emulators, Burp"],
       ["Data Analysis", "Pandas, Basic ML"],
-      ["Councurrency programming", "Asyncio, Multithreading"],
+      ["Councurrency", "Asyncio, Multithreading"],
       ["Testing", "Playwright, Pytest"],
       ["Other", "GIT, Docker, Linux, Nginx"],
       ["Soft-skills", "Google, blind-printing"]
@@ -161,7 +163,7 @@ const resumeContentEn = {
     "items":[
       ["university", "Moscow State University"],
       ["Faculty", "Geographic"],
-      ["Specialization", "Ecology(Incomplete, 5th year)"],
+      ["Specialization", "Ecology"],
     ]
   },
   interests: {
@@ -311,6 +313,7 @@ function createDetails(job) {
   span.innerText = job["details"]["key"]
   li.appendChild(span)
   const innerUl = document.createElement("ul")
+  innerUl.classList.add("inner-white-list__simple")
   job["details"]["items"].forEach(description => {
     const InnerLi = document.createElement("li")
     const InnerTitle = document.createElement("span")
