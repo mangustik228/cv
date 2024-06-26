@@ -267,12 +267,12 @@ button:hover {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: space-between;
-  height: 1280px;
+  height: 1450px;
   gap: 2.5rem;
 }
 @media screen and (max-width: 1160px) {
   .main__container {
-    height: 1550px;
+    height: 1750px;
   }
 }
 @media screen and (max-width: 920px) {
@@ -302,7 +302,7 @@ button:hover {
   font-size: 1.8rem;
   color: #f3f9f7;
   text-transform: uppercase;
-  line-height: 2;
+  margin-top: 2rem;
 }
 .text-block h3 {
   font-size: 2.1rem;
@@ -399,6 +399,12 @@ button:hover {
 }
 .work-experience__item:last-child {
   border-bottom: none;
+}
+.work-experience__item p {
+  text-indent: 0;
+  text-align: left;
+  padding-left: 0;
+  color: #475d55;
 }
 
 .green-text {

@@ -60,38 +60,41 @@ const resumeContentRu = {
     "title":"Интересы",
     "items":[
       ["Оптимизация процессов", "Автоматизация задач для повышения эффективности и сокращения ручного труда."],
-      ["Решение проблем", "Получаю удовольствие от решения сложных, нетривиальных задач."],
       ["Практическая реализация", "Исследование и применение различных технологий для создания эффективных решений."],
       ["Непрерывное обучение", "Постоянно развиваюсь и стараюсь поддержать актуальность знаний о новейших технологиях и лучших практиках в веб-разработке."]
     ]
-  },
-  experience: {
-    "title":"Опыт работы",
-    "jobs": [
-      {
-        "company":"DataInsight",
-        "position":{"key":"Позиция", "value":"Python разработчик"},
-        "period":{"key":"Период","value": "Август 2022 - Наст.время"}, 
-        "details":{
-          "key":"Детали", 
+    },
+    experience: {
+      "title":"Опыт работы",
+      "jobs": [
+        {
+          "company":"DataInsight",
+          "position":{"key":"Позиция", "value":"Python разработчик"},
+          "period":{"key":"Период","value": "Август 2022 - Наст.время"}, 
+          "about":"(B2B аналитика e-commerce рынка)",
+          "details":{
+            "key":"Детали", 
           "items":[
             ["Разработка парсеров", "Разработка и поддержка парсеров для различных веб-ресурсов, способных обходить более 2 млн страниц в день, с возможностью дальнейшего масштабирования."],
-            ["Разработка сервисов", "Создание сервиса ротации и мониторинга проксей для обеспечения стабильной работы десятка парсеров"],
+            ["Разработка сервисов", "Создание сервиса ротации и мониторинга проксей для обеспечения стабильной работы десятка парсеров одновременно"],
             ["Управление базами данных", "Проектирование структур баз данных, написание SQL-запросов для хранения и извлечения данных, сотрудничество с аналитиками для предоставления необходимой информации."],
             ["Разработка веб-интерфейсов", "Создание внутренних интерфейсов на FastAPI для взаимодействия с парсерами и базами данных."]
           ]
         }
       },
       {
-        "company":"Пионер (Мебельная компания)",
+        "company":"Пионер",
         "position":{"key":"Позиция", "value":"Менеджер-конструктор"},
         "period":{"key":"Период","value": "Июль 2010 - Сентябрь 2021"},
+        "about":"(производство специализированной мебели на заказ)",
         "details":{
           "key":"Детали", 
           "items":[
-            ["Общение с клиентами", "Ведение переговоров с клиентами, 3D моделирование мебели, проектирование изделий и передача их в цех для производства"],
+            ["Взаимодействие с клиентами", "Ведение переговоров, выявление потребностей, 3D моделирование в SketchUp, согласование и оформление чертежей в Layout."],
+            ['Проектирование изделий', "Разработка детальных чертежей и передача их в цех для дальнейшего производства"],
             ["Оптимизация процессов", "Разработка макросов Excel для автоматизации рутинных задач и повышения продуктивности."],
-            ["Управление проектами", "Руководство разработкой системы учёта заказов, включая поиск и взаимодействие с программистом."]
+            ["Управление проектами", "Руководство разработкой системы учёта заказов, включая поиск и взаимодействие с программистом."],
+            ["Контент и веб-оптимизация", "Управление контентом сайта, SEO-оптимизицаия сайта, разработка логики онлайн-калькуляторов для сайта."]
           ]
         }
       }
@@ -178,7 +181,7 @@ const resumeContentEn = {
           "key":"Details", 
           "items":[
             ["Development of parsers", "Development and maintenance of parsers for various web resources, capable of processing over 2 million pages per day, with the potential for further scaling."],
-            ["Service development", "Creation of a proxy rotation and monitoring service to ensure stable operation of a dozen parsers."],
+            ["Service development", "Creation of a proxy rotation and monitoring service to ensure stable operation of a dozen parsers at one time."],
             ["Database management", "Designing database structures, writing SQL queries for data storage and retrieval, collaborating with analysts to provide necessary information."],
             ["Web interface development", "Creating internal interfaces on FastAPI for interaction with parsers and databases."]
         ]
@@ -329,10 +332,15 @@ function createWorkExperienceElement(id, key, content) {
 function createJobItem(job) {
   const jobElement = document.createElement("li")
   jobElement.classList.add("work-experience__item")
+  
   const title = document.createElement("h4")
   title.innerText = job.company
   jobElement.appendChild(title)
-
+  
+  const about = document.createElement("p")
+  about.innerText = job.about
+  jobElement.appendChild(about)
+  
   const infoUL = document.createElement("ul")
   infoUL.classList.add("list-one-row")
   jobElement.appendChild(infoUL)

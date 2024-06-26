@@ -10,10 +10,10 @@
         flex-wrap: wrap 
         flex-direction: column
         align-content: space-between
-        height: 1280px
+        height: 1450px
         gap: 2.5rem
         @media screen and ( max-width: 1160px ) 
-            height: 1550px
+            height: 1750px
         @media screen and ( max-width: 920px )
             flex-wrap: nowrap
             align-items: center
@@ -31,7 +31,7 @@
         font-size: 1.8rem
         color: $white_font_color
         text-transform: uppercase
-        line-height: 2
+        margin-top: 2rem
     h3 
         font-size: 2.1rem
         text-transform: uppercase
@@ -111,6 +111,11 @@
         border-bottom: 1px solid $light_font_color
         &:last-child
             border-bottom: none
+        & p 
+            text-indent: 0
+            text-align: left
+            padding-left: 0
+            color: $light_font_color
 
 
 
