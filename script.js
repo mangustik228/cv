@@ -92,7 +92,7 @@ const resumeContentRu = {
           "items":[
             ["Взаимодействие с клиентами", "Ведение переговоров, выявление потребностей, 3D моделирование в SketchUp, согласование и оформление чертежей в Layout."],
             ['Проектирование изделий', "Разработка детальных чертежей и передача их в цех для дальнейшего производства"],
-            ["Оптимизация процессов", "Разработка макросов Excel для автоматизации рутинных задач и повышения продуктивности."],
+            ["Оптимизация процессов", "Разработка динамических 3-d моделей и написание макросов Excel для автоматизации рутинных задач и повышения продуктивности."],
             ["Управление проектами", "Руководство разработкой системы учёта заказов, включая поиск и взаимодействие с программистом."],
             ["Контент и веб-оптимизация", "Управление контентом сайта, SEO-оптимизицаия сайта, разработка логики онлайн-калькуляторов для сайта."]
           ]
@@ -165,38 +165,41 @@ const resumeContentEn = {
     "title":"interests",
     "items":[
       ["Process Optimization", "Automating tasks to improve efficiency and reduce manual work."],
-      ["Problem-solving", "Enjoying the challenge of solving complex, non-trivial problems."],
       ["Practical implementation", "Exploring and applying various technologies to create effective solutions."],
       ["Continuous Learning", "I am constantly evolving and striving to keep my knowledge up to date with the latest technologies and best practices in web development."],
     ]
   },
   experience: {
-    "title":"work experience",
+    "title": "Work Experience",
     "jobs": [
       {
-        "company":"DataInsight",
-        "position":{"key":"Position", "value":"Python Developer"},
-        "period":{"key":"Period","value": "August 2022 - Present"}, 
-        "details":{
-          "key":"Details", 
-          "items":[
-            ["Development of parsers", "Development and maintenance of parsers for various web resources, capable of processing over 2 million pages per day, with the potential for further scaling."],
-            ["Service development", "Creation of a proxy rotation and monitoring service to ensure stable operation of a dozen parsers at one time."],
-            ["Database management", "Designing database structures, writing SQL queries for data storage and retrieval, collaborating with analysts to provide necessary information."],
-            ["Web interface development", "Creating internal interfaces on FastAPI for interaction with parsers and databases."]
-        ]
+        "company": "DataInsight",
+        "position": { "key": "Position", "value": "Python Developer" },
+        "period": { "key": "Period", "value": "August 2022 - Present" },
+        "about": "(B2B analytics of the e-commerce market)",
+        "details": {
+          "key": "Details",
+          "items": [
+            ["Parser Development", "Development and maintenance of parsers for various web resources, capable of traversing over 2 million pages per day, with potential for further scaling."],
+            ["Service Development", "Creating a proxy rotation and monitoring service to ensure stable operation of multiple parsers simultaneously."],
+            ["Database Management", "Designing database structures, writing SQL queries for data storage and retrieval, and collaborating with analysts to provide necessary information."],
+            ["Web Interface Development", "Creating internal interfaces using FastAPI for interaction with parsers and databases."]
+          ]
         }
       },
       {
-        "company":"Pioner",
-        "position":{"key":"Position", "value":"Manager-Designer"},
-        "period":{"key":"Period","value": "July 2010 - September 2021"},
-        "details":{
-          "key":"Details", 
-          "items":[
-            ["Client communication", "Negotiating with clients, 3D modeling of furniture, designing products, and sending them to the workshop for production."],
-            ["Process optimization", "Developing Excel macros to automate routine tasks and improve productivity."],
-            ["Project management", "Leading the development of an order tracking system, including finding and liaising with a programmer."]
+        "company": "Pioneer",
+        "position": { "key": "Position", "value": "Design Manager" },
+        "period": { "key": "Period", "value": "July 2010 - September 2021" },
+        "about": "(custom specialized furniture manufacturing)",
+        "details": {
+          "key": "Details",
+          "items": [
+            ["Client Interaction", "Conducting negotiations, identifying needs, 3D modeling in SketchUp, coordinating and preparing drawings in Layout."],
+            ["Product Design", "Developing detailed drawings and handing them over to the workshop for further production."],
+            ["Process Optimization", "Developing dynamic 3D models and writing Excel macros to automate routine tasks and increase productivity."],
+            ["Project Management", "Leading the development of an order tracking system, including searching for and collaborating with a programmer."],
+            ["Content and Web Optimization", "Managing website content, SEO optimization, and developing the logic for online calculators on the website."]
           ]
         }
       }
