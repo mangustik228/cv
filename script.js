@@ -62,7 +62,7 @@ const resumeContentRu = {
       ["Оптимизация процессов", "Автоматизация задач для повышения эффективности и сокращения ручного труда."],
       ["Решение проблем", "Получаю удовольствие от решения сложных, нетривиальных задач."],
       ["Практическая реализация", "Исследование и применение различных технологий для создания эффективных решений."],
-      ["Непрерывное обучение", "Поддержание актуальности знаний о новейших технологиях и лучших практиках в веб-разработке и программировании на Python."]
+      ["Непрерывное обучение", "Постоянно развиваюсь и стараюсь поддержать актуальность знаний о новейших технологиях и лучших практиках в веб-разработке."]
     ]
   },
   experience: {
@@ -164,7 +164,7 @@ const resumeContentEn = {
       ["Process Optimization", "Automating tasks to improve efficiency and reduce manual work."],
       ["Problem-solving", "Enjoying the challenge of solving complex, non-trivial problems."],
       ["Practical implementation", "Exploring and applying various technologies to create effective solutions."],
-      ["Continuous learning", "Staying updated with the latest technologies and best practices in web development and Python programming"],
+      ["Continuous Learning", "I am constantly evolving and striving to keep my knowledge up to date with the latest technologies and best practices in web development."],
     ]
   },
   experience: {
