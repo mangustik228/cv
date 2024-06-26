@@ -80,7 +80,8 @@ const resumeContentRu = {
             ["Разработка парсеров", "Разработка и поддержка парсеров для различных веб-ресурсов, способных обходить более 2 млн страниц в день, с возможностью дальнейшего масштабирования."],
             ["Разработка сервисов", "Создание сервиса ротации и мониторинга проксей для обеспечения стабильной работы десятка парсеров одновременно"],
             ["Управление базами данных", "Проектирование структур баз данных, написание SQL-запросов для хранения и извлечения данных, сотрудничество с аналитиками для предоставления необходимой информации."],
-            ["Разработка веб-интерфейсов", "Создание внутренних интерфейсов на FastAPI для взаимодействия с парсерами и базами данных."]
+            ["Разработка веб-интерфейсов", "Создание внутренних интерфейсов на FastAPI для взаимодействия с парсерами и базами данных."],
+            ["Контейнеризация", "Разработка и поддержка Docker Compose файлов, упаковка компонентов системы в отдельные сервисы для облегчения развертывания и масштабирования."]
           ]
         }
       },
@@ -185,7 +186,8 @@ const resumeContentEn = {
             ["Parser Development", "Development and maintenance of parsers for various web resources, capable of traversing over 2 million pages per day, with potential for further scaling."],
             ["Service Development", "Creating a proxy rotation and monitoring service to ensure stable operation of multiple parsers simultaneously."],
             ["Database Management", "Designing database structures, writing SQL queries for data storage and retrieval, and collaborating with analysts to provide necessary information."],
-            ["Web Interface Development", "Creating internal interfaces using FastAPI for interaction with parsers and databases."]
+            ["Web Interface Development", "Creating internal interfaces using FastAPI for interaction with parsers and databases."],
+            ["Containerization", "Developed and maintained Docker Compose files, packaging system components into separate services to facilitate deployment and scalability."]
           ]
         }
       },
