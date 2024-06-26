@@ -190,7 +190,7 @@ const resumeContentEn = {
         }
       },
       {
-        "company": "Pioneer",
+        "company": "Pioner",
         "position": { "key": "Position", "value": "Design Manager" },
         "period": { "key": "Period", "value": "July 2010 - September 2021" },
         "about": "(custom specialized furniture manufacturing)",
