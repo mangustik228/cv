@@ -323,9 +323,6 @@ button:hover {
 .text-block p span:first-child:first-letter {
   text-transform: capitalize;
 }
-.text-block p span:first-child::after {
-  content: ": ";
-}
 
 .list-one-row li {
   margin-bottom: 0.2rem;
@@ -342,7 +339,6 @@ button:hover {
   text-transform: capitalize;
 }
 .list-one-row li span:first-child::after {
-  content: ": ";
   flex-grow: 1;
 }
 .list-one-row li span:last-child {

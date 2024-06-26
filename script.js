@@ -34,7 +34,7 @@ const resumeContentRu = {
     "title":"языки",
     "items": [
       ["Русский", "родной"],
-      ["Английский", "B1"]
+      ["Английский", "B1 - B2"]
     ]
   },
   courses: {
@@ -46,6 +46,8 @@ const resumeContentRu = {
       ["Интерактивынй тренажер SQL", "https://stepik.org/cert/2170328"], 
       ["FastApi - Погружение в backend", "https://stepik.org/cert/2175008"], 
       ["Многопоточный python", "https://stepik.org/cert/2402675"],
+      ["DataScience (Яндекс Практикум, 5 из 6 модулей)"], 
+      ["Алгоритмы. (Хирьянов, Youtube, МФТИ 2 семестра)"]
     ]
   },
   education: {
@@ -224,7 +226,7 @@ function insertCourses(id, key, content) {
       li.appendChild(link)
     } else {
       empty_span = document.createElement("span")
-      empty_span.innerText = "Без сертификата"
+      name.classList.add("no-colon")
       li.appendChild(empty_span)
     }
     ul.appendChild(li)
