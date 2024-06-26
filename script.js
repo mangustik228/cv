@@ -18,7 +18,7 @@ const resumeContentRu = {
   skills: {
     "title": "Навыки",
     "items": [
-      ["Языки программирования", "Python, Basic JS / TS"],
+      ["Языки программирования", "Python, TypeScript"],
       ["Фронтенд технологии", "HTML, CSS, SASS"],
       ["Базы данных", "SQL, Mongo, Redis"],
       ["Веб-фреймворки", "FastAPI"],
