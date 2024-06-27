@@ -61,10 +61,15 @@
                 text-transform: capitalize
 
 @media print
+    h1 
+        line-height: 1.4
     body
         font-family: serif
     .header 
         margin: 0
+        &__container 
+            align-items: flex-start
+
     #main-content
         background: white
         padding: 5px
@@ -87,20 +92,21 @@
             gap: 1rem
             margin: 0
 
-    .header
-        &__container
-            align-items: start
-        &__contacts 
-            & ul 
-                gap: 0 
-            & ul li 
-                line-height: 1.4
-            margin: 0
-            padding: 0
-            & ul li span:first-child
-                color: black 
-            & ul li span:last-child, & ul li a
-                color: grey
+        // &__contacts
+        //     justify-content: start
+        //     align-items: flex-start
+    .contacts 
+        & ul 
+            gap: 0 
+        & ul li 
+            line-height: 1.4
+        margin: 0
+        padding: 0
+        & ul li span:first-child
+            color: black 
+        & ul li span:last-child, & ul li a
+            color: grey
+
     #download-button 
         display: none
     button 
@@ -127,7 +133,7 @@
         & > *:not(h3)
             margin-left: 6px
         h3
-            margin-bottom: 0.3rem
+            margin-bottom: 0.5rem
             color: black
             border-bottom: 1px solid grey
         h4

@@ -347,11 +347,17 @@ button:hover {
 }
 
 @media print {
+  h1 {
+    line-height: 1.4;
+  }
   body {
     font-family: serif;
   }
   .header {
     margin: 0;
+  }
+  .header__container {
+    align-items: flex-start;
   }
   #main-content {
     background: white;
@@ -378,23 +384,20 @@ button:hover {
     gap: 1rem;
     margin: 0;
   }
-  .header__container {
-    align-items: start;
-  }
-  .header__contacts {
+  .contacts {
     margin: 0;
     padding: 0;
   }
-  .header__contacts ul {
+  .contacts ul {
     gap: 0;
   }
-  .header__contacts ul li {
+  .contacts ul li {
     line-height: 1.4;
   }
-  .header__contacts ul li span:first-child {
+  .contacts ul li span:first-child {
     color: black;
   }
-  .header__contacts ul li span:last-child, .header__contacts ul li a {
+  .contacts ul li span:last-child, .contacts ul li a {
     color: grey;
   }
   #download-button {
@@ -430,7 +433,7 @@ button:hover {
     margin-left: 6px;
   }
   .text-block h3 {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
     color: black;
     border-bottom: 1px solid grey;
   }
