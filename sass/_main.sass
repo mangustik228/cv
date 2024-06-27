@@ -145,8 +145,13 @@
                 margin-left: 6px
             & h4
                 display: inline-block
+                text-transform: capitalize
+                font-style: italic
+                text-decoration: underline
+                font-size: 2rem
             & p 
                 display: inline-block
+                font-style: italic
             & li 
                 margin: 0
             & .list-one-row 
@@ -158,8 +163,13 @@
                     gap: 2rem
                 & li 
                     display: inline-block
-                    &:first-child::after
-                        content: ": "
+                    &:first-child
+                        font-weight: bold
+                        font-size: 1.8rem
+                        &::after
+                            content: ":"
+                    &:last-child
+                        padding-left: 1rem
 
     .list-one-row 
         & li

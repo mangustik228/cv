@@ -453,9 +453,14 @@ button:hover {
   }
   .work-experience__item h4 {
     display: inline-block;
+    text-transform: capitalize;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 2rem;
   }
   .work-experience__item p {
     display: inline-block;
+    font-style: italic;
   }
   .work-experience__item li {
     margin: 0;
@@ -471,8 +476,15 @@ button:hover {
   .work-experience__item .list-one-row li {
     display: inline-block;
   }
+  .work-experience__item .list-one-row li:first-child {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
   .work-experience__item .list-one-row li:first-child::after {
-    content: ": ";
+    content: ":";
+  }
+  .work-experience__item .list-one-row li:last-child {
+    padding-left: 1rem;
   }
   .list-one-row li {
     margin: 0;
