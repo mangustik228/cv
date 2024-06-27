@@ -43,7 +43,7 @@
         color: $white_font_color
         text-transform: uppercase
         margin-top: 2rem
-    h3 
+    & h3 
         font-size: 2.1rem
         text-transform: uppercase
         font-weight: bold
@@ -62,10 +62,14 @@
 
 
 @media print
+    .header 
+        margin: 0
     #main-content
         background: white
         padding: 5px
         box-shadow: none
+        gap: 0.2rem
+        margin: 0
     #skills
         order: -2 
     #experience 
@@ -73,18 +77,28 @@
     .text-block
         max-width: none
         width: 100%
+        margin: 0
     .main 
         &__container 
             display: flex
             flex-direction: row
             height: 100%
+            gap: 1rem
+            margin: 0
 
     #download-cv-a
         display: none
+        & button 
+            display: none
+
     .header
         &__container
             align-items: start
         &__contacts 
+            & ul 
+                gap: 0 
+            & ul li 
+                line-height: 1.4
             margin: 0
             padding: 0
             & ul li span:first-child
@@ -111,25 +125,61 @@
             display: inline-block
 
     .text-block 
-        margin-bottom: 15px
+        margin-bottom: 0px
+        & > *:not(h3)
+            margin-left: 6px
         h3
+            margin-bottom: 0.3rem
             color: black
             border-bottom: 1px solid grey
         h4
+            margin-top: 0
             color: black 
+    .work-experience
+        margin-left: 7px
+        &__item 
+            & .inner-white-list > li > span
+                display: none
+            & .inner-white-list__simple
+                padding-left: 0
+                margin-left: 12px
+            & > *:not(h4)
+                margin-left: 6px
+            & h4
+                display: inline-block
+            & p 
+                display: inline-block
+            & li 
+                margin: 0
+            & .list-one-row 
+                & span:first-child
+                    display: none
+                & ul 
+                    display: flex
+                    align-content: space-around
+                    gap: 2rem
+                & li 
+                    display: inline-block
+                    &:first-child::after
+                        content: ": "
 
     .list-one-row 
-        & li span
-            color: black
-            
+        & li
+            margin: 0
+            & span
+                color: black
+
     #skills 
         & .list-one-row
             color: black
             & li
+                margin: 0
                 color: black
                 display: inline
                 &::after
                     content: ", "
+                &:last-child::after
+                    content: none
                 & span:first-child
                     display: none
                 & span 
@@ -137,8 +187,16 @@
     #courses 
         & a 
             display: none
+        & ul 
+            display: flex
+            flex-wrap: wrap
+        & li 
+            flex: 1 0 33.33%
+            margin: 0
     #experience
+        margin-left: 0
         & ul li 
+            margin: 0
             color: black
             & span 
                 color: black
@@ -150,12 +208,23 @@
     #education 
         & ul li span 
             color: black 
+        & li 
+            display: block
+            margin: 0
+            & span:first-child::after
+                content: ": "
+
     #about-me 
         & p 
             color: black
     #languages 
         & ul li span
             color: black
+        & li 
+            display: block
+            margin: 0
+            & span:first-child::after
+                content: ": "
 
 .list-one-row
     & li 

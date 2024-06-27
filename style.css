@@ -335,10 +335,15 @@ button:hover {
 }
 
 @media print {
+  .header {
+    margin: 0;
+  }
   #main-content {
     background: white;
     padding: 5px;
     box-shadow: none;
+    gap: 0.2rem;
+    margin: 0;
   }
   #skills {
     order: -2;
@@ -349,13 +354,19 @@ button:hover {
   .text-block {
     max-width: none;
     width: 100%;
+    margin: 0;
   }
   .main__container {
     display: flex;
     flex-direction: row;
     height: 100%;
+    gap: 1rem;
+    margin: 0;
   }
   #download-cv-a {
+    display: none;
+  }
+  #download-cv-a button {
     display: none;
   }
   .header__container {
@@ -364,6 +375,12 @@ button:hover {
   .header__contacts {
     margin: 0;
     padding: 0;
+  }
+  .header__contacts ul {
+    gap: 0;
+  }
+  .header__contacts ul li {
+    line-height: 1.4;
   }
   .header__contacts ul li span:first-child {
     color: black;
@@ -395,14 +412,58 @@ button:hover {
     display: inline-block;
   }
   .text-block {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
+  }
+  .text-block > *:not(h3) {
+    margin-left: 6px;
   }
   .text-block h3 {
+    margin-bottom: 0.3rem;
     color: black;
     border-bottom: 1px solid grey;
   }
   .text-block h4 {
+    margin-top: 0;
     color: black;
+  }
+  .work-experience {
+    margin-left: 7px;
+  }
+  .work-experience__item .inner-white-list > li > span {
+    display: none;
+  }
+  .work-experience__item .inner-white-list__simple {
+    padding-left: 0;
+    margin-left: 12px;
+  }
+  .work-experience__item > *:not(h4) {
+    margin-left: 6px;
+  }
+  .work-experience__item h4 {
+    display: inline-block;
+  }
+  .work-experience__item p {
+    display: inline-block;
+  }
+  .work-experience__item li {
+    margin: 0;
+  }
+  .work-experience__item .list-one-row span:first-child {
+    display: none;
+  }
+  .work-experience__item .list-one-row ul {
+    display: flex;
+    align-content: space-around;
+    gap: 2rem;
+  }
+  .work-experience__item .list-one-row li {
+    display: inline-block;
+  }
+  .work-experience__item .list-one-row li:first-child::after {
+    content: ": ";
+  }
+  .list-one-row li {
+    margin: 0;
   }
   .list-one-row li span {
     color: black;
@@ -411,11 +472,15 @@ button:hover {
     color: black;
   }
   #skills .list-one-row li {
+    margin: 0;
     color: black;
     display: inline;
   }
   #skills .list-one-row li::after {
     content: ", ";
+  }
+  #skills .list-one-row li:last-child::after {
+    content: none;
   }
   #skills .list-one-row li span:first-child {
     display: none;
@@ -426,7 +491,19 @@ button:hover {
   #courses a {
     display: none;
   }
+  #courses ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #courses li {
+    flex: 1 0 33.33%;
+    margin: 0;
+  }
+  #experience {
+    margin-left: 0;
+  }
   #experience ul li {
+    margin: 0;
     color: black;
   }
   #experience ul li span {
@@ -441,11 +518,25 @@ button:hover {
   #education ul li span {
     color: black;
   }
+  #education li {
+    display: block;
+    margin: 0;
+  }
+  #education li span:first-child::after {
+    content: ": ";
+  }
   #about-me p {
     color: black;
   }
   #languages ul li span {
     color: black;
+  }
+  #languages li {
+    display: block;
+    margin: 0;
+  }
+  #languages li span:first-child::after {
+    content: ": ";
   }
 }
 .list-one-row li {
