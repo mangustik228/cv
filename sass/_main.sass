@@ -21,11 +21,12 @@
 #skills
     @media screen and ( max-width: 920px )
         order: -2
-    
+
 
 #experience 
     @media screen and ( max-width: 920px )
         order: -1
+
 
 
 
@@ -59,6 +60,103 @@
             &:first-letter
                 text-transform: capitalize
 
+
+@media print
+    #main-content
+        background: white
+        padding: 5px
+        box-shadow: none
+    #skills
+        order: -2 
+    #experience 
+        order: -1
+    .text-block
+        max-width: none
+        width: 100%
+    .main 
+        &__container 
+            display: flex
+            flex-direction: row
+            height: 100%
+
+    #download-cv-a
+        display: none
+    .header
+        &__container
+            align-items: start
+        &__contacts 
+            margin: 0
+            padding: 0
+            & ul li span:first-child
+                color: black 
+            & ul li span:last-child, & ul li a
+                color: grey
+    button 
+        display: none
+    .greeting 
+        width: 50%
+        &__circle-image
+            display: none
+        
+    #occupation
+        color: black
+        display: inline
+        width: 100%
+        max-width: none
+        font-size: 3rem
+        & span
+            display: inline-block
+            color: black
+        & p 
+            display: inline-block
+
+    .text-block 
+        margin-bottom: 15px
+        h3
+            color: black
+            border-bottom: 1px solid grey
+        h4
+            color: black 
+
+    .list-one-row 
+        & li span
+            color: black
+            
+    #skills 
+        & .list-one-row
+            color: black
+            & li
+                color: black
+                display: inline
+                &::after
+                    content: ", "
+                & span:first-child
+                    display: none
+                & span 
+                    color: black
+    #courses 
+        & a 
+            display: none
+    #experience
+        & ul li 
+            color: black
+            & span 
+                color: black
+    #interests 
+        & ul li 
+            color: black
+            & span
+                color: black
+    #education 
+        & ul li span 
+            color: black 
+    #about-me 
+        & p 
+            color: black
+    #languages 
+        & ul li span
+            color: black
+
 .list-one-row
     & li 
         margin-bottom: 0.2rem
@@ -72,6 +170,7 @@
             flex-grow: 1 
             &::after
                 flex-grow: 1 
+
         & span:last-child
             color: $green_font_color
         & a 

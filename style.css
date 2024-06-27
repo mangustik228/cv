@@ -334,6 +334,120 @@ button:hover {
   text-transform: capitalize;
 }
 
+@media print {
+  #main-content {
+    background: white;
+    padding: 5px;
+    box-shadow: none;
+  }
+  #skills {
+    order: -2;
+  }
+  #experience {
+    order: -1;
+  }
+  .text-block {
+    max-width: none;
+    width: 100%;
+  }
+  .main__container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  #download-cv-a {
+    display: none;
+  }
+  .header__container {
+    align-items: start;
+  }
+  .header__contacts {
+    margin: 0;
+    padding: 0;
+  }
+  .header__contacts ul li span:first-child {
+    color: black;
+  }
+  .header__contacts ul li span:last-child, .header__contacts ul li a {
+    color: grey;
+  }
+  button {
+    display: none;
+  }
+  .greeting {
+    width: 50%;
+  }
+  .greeting__circle-image {
+    display: none;
+  }
+  #occupation {
+    color: black;
+    display: inline;
+    width: 100%;
+    max-width: none;
+    font-size: 3rem;
+  }
+  #occupation span {
+    display: inline-block;
+    color: black;
+  }
+  #occupation p {
+    display: inline-block;
+  }
+  .text-block {
+    margin-bottom: 15px;
+  }
+  .text-block h3 {
+    color: black;
+    border-bottom: 1px solid grey;
+  }
+  .text-block h4 {
+    color: black;
+  }
+  .list-one-row li span {
+    color: black;
+  }
+  #skills .list-one-row {
+    color: black;
+  }
+  #skills .list-one-row li {
+    color: black;
+    display: inline;
+  }
+  #skills .list-one-row li::after {
+    content: ", ";
+  }
+  #skills .list-one-row li span:first-child {
+    display: none;
+  }
+  #skills .list-one-row li span {
+    color: black;
+  }
+  #courses a {
+    display: none;
+  }
+  #experience ul li {
+    color: black;
+  }
+  #experience ul li span {
+    color: black;
+  }
+  #interests ul li {
+    color: black;
+  }
+  #interests ul li span {
+    color: black;
+  }
+  #education ul li span {
+    color: black;
+  }
+  #about-me p {
+    color: black;
+  }
+  #languages ul li span {
+    color: black;
+  }
+}
 .list-one-row li {
   margin-bottom: 0.2rem;
   display: flex;
