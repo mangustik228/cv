@@ -174,6 +174,18 @@ button:hover {
   color: #f3f9f7;
 }
 
+#tg-qr {
+  display: none;
+}
+
+@media print {
+  #tg-qr {
+    display: inline;
+  }
+  #tg-qr img {
+    height: 114px;
+  }
+}
 .greeting__surname h1 {
   font-size: 2.2rem;
   color: #475d55;

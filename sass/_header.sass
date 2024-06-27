@@ -74,6 +74,14 @@ button
     background-color: $green_font_color
     color: $white_font_color
 
+#tg-qr
+    display: none
+@media print 
+    #tg-qr
+        display: inline
+        & img 
+            height: 114px
+
 
 .greeting
     &__surname
