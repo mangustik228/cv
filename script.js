@@ -445,3 +445,14 @@ function switchLanguage(lang) {
 document.addEventListener("DOMContentLoaded", function() {
   switchLanguage('ru');
 });
+
+
+downloadButton = document.getElementById("download-button")
+downloadButton.addEventListener('click', function(event) {
+        txt = downloadButton.innerText
+        downloadButton.innerText = ""
+        event.preventDefault()
+        window.print()
+        downloadButton.innerText = txt
+    })
+

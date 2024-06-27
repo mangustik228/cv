@@ -335,6 +335,9 @@ button:hover {
 }
 
 @media print {
+  body {
+    font-family: serif;
+  }
   .header {
     margin: 0;
   }
@@ -363,12 +366,6 @@ button:hover {
     gap: 1rem;
     margin: 0;
   }
-  #download-cv-a {
-    display: none;
-  }
-  #download-cv-a button {
-    display: none;
-  }
   .header__container {
     align-items: start;
   }
@@ -387,6 +384,9 @@ button:hover {
   }
   .header__contacts ul li span:last-child, .header__contacts ul li a {
     color: grey;
+  }
+  #download-button {
+    display: none;
   }
   button {
     display: none;
