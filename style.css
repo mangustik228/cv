@@ -133,22 +133,22 @@ html {
 .contacts li span:first-child {
   text-transform: capitalize;
   flex-grow: 1;
-  color: #f3f9f7;
+  color: #e2ebe8;
 }
 .contacts li span:first-child::after {
   content: ": ";
 }
 .contacts li a {
   margin-left: auto;
-  color: #28a272;
+  color: #2ec186;
   text-align: right;
   transition: 0.2s;
 }
 .contacts li a:hover {
-  color: #f3f9f7;
+  color: #e2ebe8;
 }
 .contacts li span:last-child {
-  color: #28a272;
+  color: #2ec186;
 }
 .contacts__download-cv {
   display: block;
@@ -160,18 +160,18 @@ button {
   font-family: monospace;
   border-radius: 4px;
   margin: 2rem auto;
-  color: #28a272;
+  color: #2ec186;
   background: #475d55;
   transition: 0.2s;
 }
 button:hover {
-  color: #f3f9f7;
+  color: #e2ebe8;
   box-shadow: 0px 0px 6px #475d55;
 }
 
 .active {
-  background-color: #28a272;
-  color: #f3f9f7;
+  background-color: #2ec186;
+  color: #e2ebe8;
 }
 
 #tg-qr {
@@ -216,7 +216,7 @@ button:hover {
   font-size: 4.6rem;
   line-height: 1.4;
   text-transform: uppercase;
-  color: #f3f9f7;
+  color: #e2ebe8;
 }
 @media screen and (max-width: 1160px) {
   .greeting__occupation h2 {
@@ -238,7 +238,7 @@ button:hover {
   }
 }
 .greeting__occupation h2 span {
-  color: #28a272;
+  color: #2ec186;
 }
 .greeting__circle-image {
   width: 225px;
@@ -324,7 +324,7 @@ button:hover {
 }
 .text-block h4 {
   font-size: 1.8rem;
-  color: #f3f9f7;
+  color: #e2ebe8;
   text-transform: uppercase;
   margin-top: 2rem;
 }
@@ -332,13 +332,13 @@ button:hover {
   font-size: 2.1rem;
   text-transform: uppercase;
   font-weight: bold;
-  color: #f3f9f7;
-  border-bottom: 1px solid #f3f9f7;
+  color: #e2ebe8;
+  border-bottom: 1px solid #e2ebe8;
   line-height: 1.4;
   margin-bottom: 1.2rem;
 }
 .text-block p {
-  color: #f3f9f7;
+  color: #e2ebe8;
   line-height: 1.4;
   margin-bottom: 0.8rem;
 }
@@ -570,7 +570,7 @@ button:hover {
 .list-one-row li {
   margin-bottom: 0.2rem;
   display: flex;
-  color: #f3f9f7;
+  color: #e2ebe8;
 }
 .list-one-row li span {
   line-height: 1.5;
@@ -585,21 +585,21 @@ button:hover {
   flex-grow: 1;
 }
 .list-one-row li span:last-child {
-  color: #28a272;
+  color: #2ec186;
 }
 .list-one-row li a {
-  color: #28a272;
+  color: #2ec186;
   transition: 0.2s;
 }
 .list-one-row li a:first-letter {
   text-transform: capitalize;
 }
 .list-one-row li a:hover {
-  color: #f3f9f7;
+  color: #e2ebe8;
 }
 
 .inner-list li {
-  color: #f3f9f7;
+  color: #e2ebe8;
 }
 .inner-list li span:first-child {
   line-height: 1.4;
@@ -615,19 +615,19 @@ button:hover {
   line-height: 1.4;
 }
 .inner-list li ul li {
-  color: #28a272;
+  color: #2ec186;
 }
 .inner-list li ul li::before {
   content: "- ";
 }
 
 .inner-white-list li ul li {
-  color: #f3f9f7;
+  color: #e2ebe8;
   padding: 0.3rem 0;
 }
 .inner-white-list__simple li {
   line-height: 1.3;
-  color: #f3f9f7;
+  color: #e2ebe8;
   margin-bottom: 0.8rem;
 }
 
@@ -649,7 +649,7 @@ button:hover {
 }
 
 .green-text {
-  color: #28a272;
+  color: #2ec186;
   font-weight: bold;
 }
 .green-text::after {
