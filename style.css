@@ -452,6 +452,7 @@ button:hover {
     margin-left: 6px;
   }
   .work-experience__item h4 {
+    margin-top: 1rem;
     display: inline-block;
     text-transform: capitalize;
     font-style: italic;
